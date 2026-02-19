@@ -20,13 +20,5 @@
         <p><a href="{{ parent_section.permalink | safe }}">← Back to blog section</a></p>
     {% endif %}
 
-    {% if page.date %}
-        <p> <i> Last updated on
-            <time datetime="{{ page.date | date(format="%Y-%m-%d") }}">
-                {{ page.date | date(format="%b %d, %Y") }}
-            </time>
-        </i> </p>
-    {% endif %}
-
     {{ page.content | safe }}
 {% endblock content %}

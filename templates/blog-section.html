@@ -30,11 +30,7 @@
                 <li>
                 <article class="post-summary">
                     <b> <a href="{{ post.permalink | safe }}">{{ post.title }}</a> </b>
-                    {% if post.date %}
-                        - <time datetime="{{ post.date | date(format="%Y-%m-%d") }}">
-                            {{ post.date | date(format="%b %d, %Y") }}
-                        </time>
-                    {% endif %}
+                    
                     {% if post.description %}
                         <ul>
                             <li>{{ post.description | safe }}</li>
