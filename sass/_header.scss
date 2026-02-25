@@ -127,7 +127,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #fffbeb;
+  color: oklch(98.4% 0.003 247.858);
+  background: oklch(27.4% 0.006 286.033);
 
   .menu-icon {
     height: 50px;
@@ -141,9 +142,13 @@
 
     @include menu-icon();
 
+    span {
+      background-color: oklch(98.4% 0.003 247.858);
+    }
+
     &:hover {
       span {
-        background-color: black;
+        background-color: oklch(70.5% 0.015 286.067);
       }
     }
   }
@@ -154,12 +159,12 @@
     display: inline-block;
     text-align: center;
     line-height: 50px;
-    color: rgba(0, 0, 0, 0.5);
+    color: oklch(98.4% 0.003 247.858);
     cursor: pointer;
     font-size: 2rem;
 
     &:hover {
-      color: black
+      color: oklch(98.4% 0.003 247.858);
     }
   }
 }

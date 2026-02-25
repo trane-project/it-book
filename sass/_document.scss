@@ -26,7 +26,6 @@
   margin-block: 1em;
   margin-bottom: 1.5em;
   font-size: 1.2em;
-  font-style: italic;
   text-align: center;
 }
 
@@ -34,7 +33,7 @@
 .license-button {
   display: block;
   padding: 0.6em 1.4em;
-  background-color: #92400e;
+  background-color: oklch(55.2% 0.016 285.938);
   border-radius: 0.4em;
   font-size: 1.1em;
   text-align: center;
@@ -48,11 +47,10 @@
   max-width: 60%;
 }
 a.license-button {
-  color: #fef3c7 !important;
   text-decoration: none !important;
 }
 .license-button:hover, .license-button:focus {
-  background-color: #78350f;
+  background-color: oklch(44.2% 0.017 285.786);
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   color: #fff !important;
   text-decoration: none !important;
@@ -83,7 +81,7 @@ a.license-button {
 .faq {
   margin: 2em 0;
   font-size: 0.95em;
-  color: #555555;
+  color: oklch(92.9% 0.013 255.508);
   border: 1px solid #ddd;
   border-radius: 6px;
   transition: background 0.2s;
@@ -112,6 +110,6 @@ body, html {
 
 body {
   text-rendering: optimizeLegibility;
-  font-family: "Spectral", serif, sans-serif;
+  font-family: "JetBrains Mono", serif;
   letter-spacing: 0.2px;
 }

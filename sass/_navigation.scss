@@ -5,9 +5,9 @@
   left: 0;
   overflow-y: auto;
   width: #{variables.$sidebar-width};
-  color: #461901;
-  background: #fffbeb;
-  border-right: 1px solid rgba(70, 25, 1, 0.25);
+  color: oklch(98.4% 0.003 247.858);
+  background: oklch(27.4% 0.006 286.033);
+  border-right: 1px solid oklch(98.4% 0.003 247.858);
   transition: 0.5s;
 
   ul {
@@ -18,7 +18,7 @@
 
     a {
       display: block;
-      color: #461901;
+      color: oklch(98.4% 0.003 247.858);
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
@@ -32,7 +32,7 @@
     }
 
     li.active > a {
-      color: #0053bc;
+      color: oklch(70.5% 0.015 286.067);
       text-decoration: none;
     }
 

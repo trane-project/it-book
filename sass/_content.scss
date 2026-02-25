@@ -4,8 +4,8 @@
   width: calc(100% - #{variables.$sidebar-width});
   height: 100%;
   overflow-y: auto;
-  color: #461901;
-  background: #fffbeb;
+  color: oklch(98.4% 0.003 247.858);
+  background: oklch(27.4% 0.006 286.033);
   padding-bottom: 20px;
   transition: 0.5s;
 
@@ -28,14 +28,13 @@
     h1 {
       font-size: 3em;
       font-weight: normal;
-      font-style: italic;
       text-align: center;
       margin: 0;
       margin-bottom: 0.5em;
     }
 
     a {
-      color: #193BB9;
+      color: oklch(82.8% 0.111 230.318);
       text-decoration: underline;
 
       &:hover {
@@ -52,7 +51,7 @@
       padding: 0;
       margin: 1.7em 0;
       overflow: hidden;
-      background-color: #461901;
+      background-color: oklch(87.1% 0.006 286.286);
       border: none;
     }
 
@@ -72,19 +71,15 @@
       border-left: 4px solid #e5e5e5;
     }
 
-    pre code {
-      background: none;
-    }
-
     code {
       display: inline-block;
       vertical-align: middle;
       padding: 0.1em 0.3em;
       border-radius: 3px;
-      color: #6e6b5e;
-      background: #f1f1f1;
+      color: oklch(44.2% 0.017 285.786);
+      background: oklch(92% 0.004 286.32);
       font-size: 0.875em;
-      font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+      font-family: "JetBrains Mono", monospace;
     }
 
     iframe {
@@ -211,8 +206,8 @@
     padding: 1rem;
     border: 1px solid #aaa;
     border-radius: 3px;
-    background-color: #fafafa;
-    color: #000;
+    color: oklch(98.4% 0.003 247.858);
+    background: oklch(27.9% 0.041 260.031);
   }
 
   .search-results {
