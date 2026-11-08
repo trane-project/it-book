@@ -76,6 +76,12 @@
                             {% set is_active = true %}
                         {% endif %}
 
+                        {# Check whether the current page belongs to this menu section #}
+                        {% set page_in_section = false %}
+                        {% for p in menu_section.pages %}
+                            {% if p.path == current_path %}{% set_global page_in_section = true %}{% endif %}
+                        {% endfor %}
+
                         <li {% if is_active %}class="active"{% endif %}>
                             {% set chapter_num = loop.index %}
                             <a href="{{ menu_section.permalink | safe }}">
@@ -92,7 +98,7 @@
                             {% if i.pages and (
                                 not config.extra.book_only_current_section_pages or
                                 current_path == menu_section.path or
-                                menu_section.pages | filter(attribute="path", value=current_path) | length > 0) %}
+                                page_in_section) %}
                                 <ul>
                                 {% for p in i.pages %}
                                     {% set page = get_page(path=i.section ~ "/" ~ p ~ ".md") %}
